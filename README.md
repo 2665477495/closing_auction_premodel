@@ -61,8 +61,12 @@ closing auction的重要性在于：
 
 13. **`target`（目标值）** - 衡量股票的wap（加权平均价格）在未来60秒的变动幅度，减去合成指数在未来60秒的变动幅度。
     - 合成指数是Optiver为此竞赛构建的Nasdaq上市股票的自定义加权指数。
+    
     - 目标值的单位是基点，这是金融市场中常用的计量单位。1基点的价格移动等同于0.01%的价格移动。
-    - 目标值的计算公式为：$$ Target = (\frac{StockWAP_{t+60}}{StockWAP_{t}} - \frac{IndexWAP_{t+60}}{IndexWAP_{t}}) \times 10000 $$
+    
+    - 目标值的计算公式为：
+    
+      $$ Target = (\frac{StockWAP_{t+60}}{StockWAP_{t}} - \frac{IndexWAP_{t+60}}{IndexWAP_{t}}) \times 10000 $$
 
 **所有与大小相关的列的数值都以美元为单位。所有与价格相关的列的数值都转换为相对于拍卖期开始时股票wap（加权平均价格）的价格变动。**
 
